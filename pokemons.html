@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX</title>
+    <link rel="stylesheet" href="pokedex.css">
+    
+</head>
+<body>
+    <h1>Pokedex launchX</h1>
+    
+    <section>
+        <div class="fondo">
+            <div>
+                <img src="/images/pokedex.jpg" alt="fondo" width="1500px">
+            </div>
+            <div class="busqueda">
+                <div>
+                    <img src="/images/pokeball.png" alt="pokebola" id="pokeimg" width="200px">
+                </div>
+                <div class="input">
+                    <div>
+                        <input type="text" placeholder="Nombre" id="pokeName" name="pokeName" value="charizard">
+                    </div>
+                    <div>
+                        <button class="boton" onclick="fletchPokemon()"></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="pokeinf">
+                    <div class="columnasinfo">
+                        <div class="columna1">
+                            <p id="type"></p>
+                        </div>
+                        <div class="columna2">
+                            <p id="type1"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Estadisticas</p>
+                        <p id="hp"></p>
+                        <p id="attack"></p>
+                        <p id="defense"></p>
+                        <p id="special-at"></p>
+                        <p id="special-def"></p>
+                        <p id="speed"></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="altura">
+                        <p id="altura"></p>
+                    </div>
+                    <div class="peso">
+                        <p id="peso"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<footer>
+    <script src="pokemons.js"></script>
+</footer>
+</html>

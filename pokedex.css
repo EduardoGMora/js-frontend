@@ -1,0 +1,123 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: blue;
+}
+section{
+    align-items: center;
+
+    justify-content: center;
+}
+input{
+    background-color: cyan;
+    border: none;
+}
+.fondo{
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+.busqueda img{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 33%;
+    left: 16%;
+}
+.busqueda input{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    border-radius: 3rem;
+    font-size: 2rem;
+    justify-content: center;
+}
+.boton{
+    display: inline-flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background: none;
+    position: absolute;
+    top: 70%;
+    left: 5.5%;
+    border: none;
+}
+.boton::after {
+	content: "";
+	width: 2px;
+	height: 2px;
+	background: none;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transition: .3s ease-in-out all;
+	border-radius: 100px;
+	transform-origin: center;
+}
+.boton:hover::after {
+	transform: scale(50);
+	background: rgb(103, 189, 103);
+}
+div .pokeinf{
+    top: 29%;
+    left: 57%;
+    position: absolute;
+    background-color: rgb(0, 53, 0);
+    height: 250px;
+    width: 540px;
+    border-radius: 10px;
+}
+.pokeinf p{
+    font-size:larger;
+    font-weight: 500;
+    color: yellow;
+    margin: 2rem 3rem;
+    width: 3rem;
+}
+.columnasinfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.altura{
+    top: 83%;
+    left: 58%;
+    position: absolute;
+    background-color: rgb(0, 53, 0);
+    height: 80px;
+    width: 230px;
+    border-radius: 10px;
+}
+.altura p{
+    font-size:larger;
+    font-weight: 500;
+    color: yellow;
+    margin: 2rem 3rem;
+}
+.peso{
+    top: 83%;
+    left: 76%;
+    position: absolute;
+    background-color: rgb(0, 53, 0);
+    height: 80px;
+    width: 230px;
+    border-radius: 10px;
+}
+.peso p{
+    display: flex;
+    font-size:larger;
+    font-weight: 500;
+    color: yellow;
+    margin: 2rem 3rem;
+}
+.columna2{
+    grid-column: 2/3;
+}
+.columna1{
+    grid-column: 1/2;
+}
