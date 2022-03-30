@@ -70,14 +70,14 @@ div .pokeinf{
     position: absolute;
     background-color: rgb(0, 53, 0);
     height: 250px;
-    width: 540px;
+    width: 550px;
     border-radius: 10px;
 }
 .pokeinf p{
     font-size:larger;
     font-weight: 500;
     color: yellow;
-    margin: 2rem 3rem;
+    
     width: 3rem;
 }
 .columnasinfo{
@@ -120,4 +120,10 @@ div .pokeinf{
 }
 .columna1{
     grid-column: 1/2;
+}
+.stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
 }
