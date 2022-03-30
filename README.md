@@ -1,2 +1,2 @@
 # js-frontend
-pokedex hecho con csss y js
+pokedex hecho con css y js
