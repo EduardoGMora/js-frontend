@@ -2,4 +2,4 @@
 Este proyecto es mi primera práctica de HTML y CSS con JS, lo que hace la pokedex es recibir información y buscarla en PokeAPI y así poder mostrar en pantalla los datos del pokemon que buscaste.
 https://glowing-brioche-b549a0.netlify.app/
 
-Esta es la segunda versión del proyecto de pokedex, en la cual mejoro el diseño de esta con código de CSS y HTML
+Aquí mejoro el diseño de la pokedex con código de CSS y HTML, tambien le hago unos cambios al javascript y utilizo la herramienta git para tener un mejor manejo de versiones.
