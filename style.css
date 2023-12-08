@@ -3,6 +3,7 @@
     --primario: #CE1131;
     --negro: #121212;
     --verdeoscuro: #003500;
+    --verdeclaro: #67BD67;
     --azul: #31A7F1;
     --blanco: #FFF;
     --colorfuente: #C5BB44;
@@ -21,9 +22,11 @@ body{
     font-size: 1.6rem;
     line-height: 2;
 }
+h1{
+    font-size: 4rem;
+}
 img{
     max-width: 100%;
-    display: flex;
 }
 /* Utilidades */
 .no-margen{
@@ -39,14 +42,73 @@ img{
 .pokedex{
     background-color: var(--primario);
     width: min(90%, 120rem);
-    max-height: 90%;
     margin: 0 auto;
     padding: 2rem;
     border-radius: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 6rem;
+}
+
+/* busqueda de pokedex*/
+.busqueda{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
 }
 .contenedorimg{
     background-color: var(--blanco);
-    max-width: 20rem;
     padding: 2rem;
     border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+input{
+    background-color: var(--azul);
+    color: var(--negro);
+    border-radius: 3rem;
+    font-size: 2rem;
+    border-color: var(--negro);
+    padding: 2rem;
+}
+.boton{
+    display: inline-flex;
+    background-color: var(--negro);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10rem;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    border-radius: 10rem;
+    transition: .5s ease-in-out all;
+    transform-origin: center;
+}
+.boton:hover::after{
+    transform: scale(80);
+    cursor: pointer;
+    background-color: var(--verdeclaro);
+}
+
+/* estadisticas de pokemons */
+.stats{
+    background-color: var(--verdeoscuro);
+    color: var(--colorfuente);
+    padding: 2rem;
+    border-radius: 5rem;
+}
+.footer{
+    display: flex;
+    justify-content: center;
 }
