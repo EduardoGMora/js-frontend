@@ -1,0 +1,52 @@
+:root{
+    --fuente: 'Open Sans', sans-serif;
+    --primario: #CE1131;
+    --negro: #121212;
+    --verdeoscuro: #003500;
+    --azul: #31A7F1;
+    --blanco: #FFF;
+    --colorfuente: #C5BB44;
+}
+
+/*selectores globales*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuente);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+img{
+    max-width: 100%;
+    display: flex;
+}
+/* Utilidades */
+.no-margen{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar{
+    text-align: center;
+}
+
+.pokedex{
+    background-color: var(--primario);
+    width: min(90%, 120rem);
+    max-height: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 5rem;
+}
+.contenedorimg{
+    background-color: var(--blanco);
+    max-width: 20rem;
+    padding: 2rem;
+    border-radius: 5rem;
+}
