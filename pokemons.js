@@ -4,7 +4,6 @@ const fletchPokemon = () => {
     const url = `https://pokeapi.co/api/v2/pokemon/${pokeinput}`;
     fetch(url).then((res) =>{
         if (res.status != "200"){
-            console.log(res)
             pokeimage("/images/triste.jpg")
         }
         else{
